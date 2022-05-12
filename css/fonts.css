@@ -1,0 +1,32 @@
+
+
+
+
+@font-face {
+  font-family: "miFuenteRegular";
+  src: url("../font/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: "miFuentebMediumn";
+  src: url("../font/Rubik-Medium.ttf");
+}
+@font-face {
+  font-family: "miFuentebBold";
+  src: url("../font/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: "miFuenteItalic";
+  src: url("../font/Rubik-Italic.ttf");
+}
+
+@font-face {
+  font-family: "miFuenteLight";
+  src: url("../font/Rubik-Light.ttf");
+}
+
+@font-face {
+  font-family: "miFuenteLightItalic";
+  src: url("../font/Rubik-LightItalic.ttf");
+}
