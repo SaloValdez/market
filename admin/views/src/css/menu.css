@@ -1,0 +1,279 @@
+
+
+
+@import url(root.css);
+
+ @import url(fonts.css);
+
+
+
+
+/* ---------------------------------------------------- */
+/* TODO:-------------------AJUSTES GENERALES------------------ */
+/* ------------------------------------------------------ */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'miFuenteRegular';
+  font-size: 18px;
+}
+
+
+
+nav{
+  /* background-color:  var(--colorStandar); */
+  color: var(--colorFirst2);
+  font-weight:bold;
+
+}
+ nav > a:link,nav >a:hover,nav >a:active{
+  color: windowText;
+ }
+nav .contenedor-boton-menu{
+  /* box-shadow: 0px 4px 3px rgb(228, 228, 228); */
+  position: fixed;
+  width: 100%;
+  background-color: var(--colorStandar);
+  z-index: 5000;
+  border: 1px solid rgb(228, 228, 228);
+  /* background-color: ; */
+ 
+}
+
+nav .contenedor-boton-menu button{
+  background-color:transparent;
+  border: none;
+  line-height:40px;
+  padding:0px  20px;
+  margin-left: 5px;
+}
+
+nav .contenedor-boton-menu button:hover{
+background-color:  var(--colorQuarter);
+cursor: pointer;
+}
+
+
+nav ul li{
+  list-style: none;
+}
+nav a{
+  text-decoration: none;
+  display: block;
+
+}
+
+nav ul li a{
+  line-height: 40px;
+  padding-left: 25px;
+}
+
+/* nav ul li ul li a{
+  padding-left: 40px;
+} */
+
+
+nav ul li a:hover{
+  background-color:  var(--colorQuarter);
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--colorFirst);
+}
+
+
+
+
+
+/* ---------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA SMARTPHONE------------------ */
+/* ------------------------------------------------------ */
+
+@media only screen  and (min-width : 0px)   {  
+
+  
+      nav .usuario{
+        display: none;
+        
+      }
+
+      nav >ul{
+        position: absolute;
+        z-index:3000;
+        width:100%;
+        margin-top:-2000px; /*esconder menu*/
+        transition: all 0.3s;
+        background-color: var(--colorStandar);
+        height: 100%;
+         /* filter: blur(1px); */
+         /* border-top: 1px solid salmon; */
+      }
+
+      /* TODO:::: clase para MOSTRAR MENU CON SCRIPT */
+      .mostrar-menu{ 
+        margin-top:40px;
+      }
+
+      /* TODO: ocultar submenu para SCRIPT */
+      nav .sub-menu { /*ocultando el menu y con animacion--para javascript*/
+        height:0;
+        overflow: hidden;
+        transition: all 0.3s;
+        background-color: var(--colorQuarter);
+      }
+
+      /* TODO: para imagen usuario submenu */
+
+      nav .sub-user img{
+        width: 65px;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 50%;
+        border-style:double;
+      
+      }
+      nav .sub-user li{
+        text-align: center; 
+      }
+      .contenedor_imagen_user{
+        background-color: #f3dffc;
+      }
+      .nombre_user{
+        padding-bottom: 20px;
+        /* font-weight:lighter; */
+      }
+ 
+}  
+
+
+/* ---------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA TABLET------------------ */
+/* ------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+      nav >ul{
+        width:400px;
+      }
+
+}
+
+/* --------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA DESKTOP------------- */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+
+      
+        nav{
+          position: fixed;
+          box-shadow: 0px 0px 4px rgba(45, 45, 45, 0.442);
+          z-index: 3000;
+          display:flex;
+          width: 100%;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(60, 60, 60, 0.216);
+          
+        }
+
+        nav .contenedor-boton-menu{
+          display:none;
+        }
+
+        nav > ul{
+          position: relative;
+          display:flex;
+          z-index:1000;
+          box-shadow: 0px 0px 0px transparent;
+          margin: 0px;
+          transition: all 0.3s;
+          width:100%;
+          margin-top: 0px;
+
+        }
+      
+        nav >ul a{
+          line-height: 40px;
+          padding-right: 30px;
+        }
+        nav .sub-menu { /*ocultando el menu y con animacion--para javascript*/
+          height:0;
+          overflow: hidden;
+          transition: all 0.3s;
+          position:absolute;
+        }
+
+        nav .sub-menu a{
+          padding-right: 20px;
+        }
+      
+
+        nav .lista-user{
+          display:none;
+        }
+
+        nav .usuario{
+          display: flex;
+          flex-direction: column;
+          background-color: var(--colorStandar);
+        }
+     
+        nav .usuario a{
+          display: flex;
+        }
+        nav .usuario a:hover{
+          background-color: var(--colorQuarter);
+        }
+
+
+        nav .usuario .usuario-activo a img{
+          width:38px;
+          height:38px;
+          border-radius: 50%;
+
+          border-style:double;
+          border: 2px solid var(--colorpalet6);
+          margin-right: 10px;
+
+        }
+        nav .usuario .usuario-activo{
+          display: flex;
+          align-items: center;
+      
+        }
+
+        nav .usuario .usuario-activo a{
+          width:max-content;
+          line-height: 40px;
+          padding: 0px 20px;
+        }
+        
+        nav .usuario > ul{
+          background-color: var(--colorStandar);
+          display:none;
+          flex-direction: column;
+          position: absolute;
+          top: 40px;
+          z-index: 2000;
+          width: 100%;
+          box-shadow: -3px 4px 4px rgba(64, 64, 64, 0.172);
+        }
+
+
+        nav ul li:hover>ul{
+          display: block;
+          height:0;
+          overflow: visible;
+          transition: all 0.3s;
+        }
+        nav .usuario:hover > ul{
+          display:flex;
+        }
+   
+
+        
+
+}
+
+
+

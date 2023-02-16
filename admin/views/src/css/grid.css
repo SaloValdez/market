@@ -1,0 +1,111 @@
+
+
+/* GRIDDDDD */
+.grid{
+  display: grid;
+}
+/* ---------------------------------------------------- */
+/* -----------------------FIRST MOVILE -------------------*/
+/* ---------------------------------------------------- */
+/* TODO:-----MEDIA PARA SMARTPHONE (EXTRA SMALL -XS-  MEPEQUEÑO)------------------ */
+/* ------------------------------------------------------ */
+@media only screen  and (min-width : 0px)   {  
+  .col-xs-1{grid-template-columns: repeat(1,1fr);}
+  .col-xs-2{grid-template-columns: repeat(2,1fr);}
+  .col-xs-3{grid-template-columns: repeat(3,1fr);}
+  .col-xs-4{grid-template-columns: repeat(4,1fr);}
+  .col-xs-5{grid-template-columns: repeat(5,1fr);}
+  .col-xs-6{grid-template-columns: repeat(6,1fr);}
+  .col-xs-7{grid-template-columns: repeat(7,1fr);}
+  .col-xs-8{grid-template-columns: repeat(8,1fr);}
+  .col-xs-9{grid-template-columns: repeat(9,1fr);}
+  .col-xs-10{grid-template-columns: repeat(10,1fr);}
+  .col-xs-11{grid-template-columns: repeat(11,1fr);}
+  .col-xs-12{grid-template-columns: repeat(12,1fr);}
+
+  .span-xs-1{grid-column: span 1;}
+  .span-xs-2{grid-column: span 2;}
+  .span-xs-3{grid-column: span 3;}
+  .span-xs-4{grid-column: span 4;}
+  .span-xs-5{grid-column: span 5;}
+  .span-xs-6{grid-column: span 6;}
+  .span-xs-7{grid-column: span 7;}
+  .span-xs-8{grid-column: span 8;}
+  .span-xs-9{grid-column: span 9;}
+  .span-xs-11{grid-column: span 11;}
+  .span-xs-12{grid-column: span 12;}
+  .span-xs-10{grid-column: span 10;}
+}  
+/* ---------------------------------------------------- */
+/* TODO:------MEDIA PARA SMARTPHONE (MEDIUM -MD-  MEDIANO)------------------ */
+/* ------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+  .col-md-1{grid-template-columns: repeat(1,1fr);}
+  .col-md-2{grid-template-columns: repeat(2,1fr);}
+  .col-md-3{grid-template-columns: repeat(3,1fr);}
+  .col-md-4{grid-template-columns: repeat(4,1fr);}
+  .col-md-5{grid-template-columns: repeat(5,1fr);}
+  .col-md-6{grid-template-columns: repeat(6,1fr);}
+  .col-md-7{grid-template-columns: repeat(7,1fr);}
+  .col-md-8{grid-template-columns: repeat(8,1fr);}
+  .col-md-9{grid-template-columns: repeat(9,1fr);}
+  .col-md-10{grid-template-columns: repeat(10,1fr);}
+  .col-md-11{grid-template-columns: repeat(11,1fr);}
+  .col-md-12{grid-template-columns: repeat(12,1fr);}
+
+  .span-md-1{grid-column: span 1;}
+  .span-md-2{grid-column: span 2;}
+  .span-md-3{grid-column: span 3;}
+  .span-md-4{grid-column: span 4;}
+  .span-md-5{grid-column: span 5;}
+  .span-md-6{grid-column: span 6;}
+  .span-md-7{grid-column: span 7;}
+  .span-md-8{grid-column: span 8;}
+  .span-md-9{grid-column: span 9;}
+  .span-md-10{grid-column: span 10;}
+  .span-md-11{grid-column: span 11;}
+  .span-md-12{grid-column: span 12;}
+  
+}
+/* --------------------------------------------------- */
+/* TODO:-----MEDIA PARA SMARTPHONE (LARGE -LG-  LARGO)------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+  .col-lg-1{grid-template-columns: repeat(1,1fr);}
+  .col-lg-2{grid-template-columns: repeat(2,1fr);}
+  .col-lg-3{grid-template-columns: repeat(3,1fr);}
+  .col-lg-4{grid-template-columns: repeat(4,1fr);}
+  .col-lg-5{grid-template-columns: repeat(5,1fr);}
+  .col-lg-6{grid-template-columns: repeat(6,1fr);}
+  .col-lg-7{grid-template-columns: repeat(7,1fr);}
+  .col-lg-8{grid-template-columns: repeat(8,1fr);}
+  .col-lg-9{grid-template-columns: repeat(9,1fr);}
+  .col-lg-10{grid-template-columns: repeat(10,1fr);}
+  .col-lg-11{grid-template-columns: repeat(11,1fr);}
+  .col-lg-12{grid-template-columns: repeat(12,1fr);}
+
+
+  .span-lg-1{grid-column: span 1;}
+  .span-lg-2{grid-column: span 2;}
+  .span-lg-3{grid-column: span 3;}
+  .span-lg-4{grid-column: span 4;}
+  .span-lg-5{grid-column: span 5;}
+  .span-lg-6{grid-column: span 6;}
+  .span-lg-7{grid-column: span 7;}
+  .span-lg-8{grid-column: span 8;}
+  .span-lg-9{grid-column: span 9;}
+  .span-lg-10{grid-column: span 10;}
+  .span-lg-11{grid-column: span 11;}
+  .span-lg-12{grid-column: span 12;}
+  .span-lg-13{grid-row: span 3;}
+
+}
+
+
+  /* <760px ==> .col-xs */
+  
+  /* >=768px ==> .col-sm- */
+  
+  /* >=992px ==> .col-md */
+   
+  /* >=1200px ==> .col-lg */

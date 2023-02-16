@@ -1,0 +1,66 @@
+.contenador_general_login{
+background-color: var(--colorStandar);
+
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.formularioLogin{
+    background-color: var(--colorStandar);
+    border:1px solid var(--colorFifth);
+    padding: 30px 5px 30px 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: -20%;
+}
+.btnLogin {
+    width: 100%;
+}
+
+
+
+
+/* ---------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA SMARTPHONE------------------ */
+/* ------------------------------------------------------ */
+
+@media only screen  and (min-width : 0px)   {  
+ 
+  
+
+}  
+
+
+/* ---------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA TABLET------------------ */
+/* ------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+    .formularioLogin{
+        background-color: var(--colorStandar);
+        border:1px solid var(--colorFifth);
+        padding: 30px 30px 30px 30px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        /* margin-top: 0%; */
+    }
+
+}
+
+/* --------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA DESKTOP------------- */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+
+  
+
+
+    
+
+}

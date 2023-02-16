@@ -1,0 +1,31 @@
+/* #miTabla{
+  background-color:red;
+} */
+
+*thead,tr[role=row]{
+  background-color:rgb(203, 166, 245);
+  border-bottom: 2px solid rgb(252, 6, 6) !important; 
+}
+
+tbody .row:hover{
+  background-color:rgb(203, 166, 245)
+}
+
+select[name=miTabla_length]{
+  background-color:rgb(245, 220, 252);
+  text-align:center;
+  border: 1px solid rgb(172, 172, 172);
+}
+
+.dataTables_wrapper {
+ padding-top:5px;
+}
+
+.dataTables_wrapper,.dataTables_filter{
+  margin-bottom:5px;
+}
+ 
+
+table.dataTable thead th, table.dataTable thead td{
+  border-bottom: 1px solid  rgb(148, 9, 190);
+}

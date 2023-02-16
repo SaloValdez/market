@@ -1,0 +1,11 @@
+# Impedir que se pueda ver el listado de contenidos de un directorio
+
+  Options All -Indexes
+
+
+
+# Url Amigables
+  ##activar el modulo de Apache  "mod_rewrite"  de configuration -->apache2handler
+    RewriteEngine on
+
+RewriteRule ^(\w+)$  index.php?variableWeb=$1

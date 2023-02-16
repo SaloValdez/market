@@ -1,0 +1,23 @@
+:root{
+  --colorFirst: #3A0052;
+  --colorFirst2:#470063;
+  --colorFirst3:#66008F;
+
+  --colorThirdt:#DC85FF;
+  --colorSecond:#D15CFF;
+  --colorQuarter:#F9EBFF;
+  --colorFifth:rgba(210,201,210);
+  --colorpalet1:#FF1053;
+  --colorpalet2:#e0ff4f;
+  --colorpalet3:#22031f;
+  --colorpalet4:#f62dae;
+  --colorpalet5:rgb(195, 165, 250);
+  --colorpalet6:#D0BCFF;
+
+  --colorInfo:#95f3ff;
+  --colorWarni :#f0ad4e;
+  --colorDanger:#c9302c;
+  --colorDark:#0D0C35;
+  --colorDark2:#22031f;
+  --colorStandar:rgb(250, 250, 250);
+}

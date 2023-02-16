@@ -1,0 +1,1140 @@
+
+   /* @import url(fonts.css); */
+
+form{
+  width: 100%;
+}
+
+/*------------------------------------------------------------------------*/
+/*TODO: INICIO:  cajas texbox */
+/*---------------------------------------------------------------------------*/
+  
+
+   .grupo{
+  
+    position: relative;
+    margin: 18px 15px 15px 15px;
+    }
+
+    .grupo input[type=text]{
+    background:#fff;
+    color: #041647;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border:  1px solid var(--colorFifth);
+    border-radius: 5px;
+
+    } 
+
+    /* TODO:SSSSSS */
+    .grupo input[type=text]:focus,select:focus{
+    /* outline: none; */
+    color: var(--colorDark);
+    }
+
+
+
+    .grupo label{
+    color: #acafaf;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+    padding: 0px;
+    margin: 0;
+
+
+    }
+
+
+    .grupo input:focus~label,input:valid~label{
+    top: -15px;
+    font-size: 14px;
+    color: #042F6B;
+    background-color:var(--colorStandar);
+    padding:0px 10px 0px 10px;
+    margin-left: 2px;
+    }
+    .grupo select{
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    } 
+
+    .grupo input[type="text"]{
+       text-transform: uppercase;
+    }
+
+
+    input[type="text"]:disabled{
+      user-select: none;
+      background-color: rgb(250, 250, 250) !important;
+      color: #acafaf !important;
+      outline: none !important;
+    }
+
+   
+
+    .grupo label.label-block{
+        top: -15px;
+        font-size: 14px;
+        color: #042F6B;
+        background-color:var(--colorStandar);
+        padding:0px 10px 0px 10px;
+        margin-left: 2px;
+    }
+
+
+    .grupo label.label-block-visible{
+      top: -15px;
+      font-size: 14px;
+      color: #042F6B;
+      background-color:var(--colorStandar);
+      padding:0px 10px 0px 10px;
+      margin-left: 2px;
+  }
+
+
+  .input-requerido::before{
+    content: ' !';
+    color: #acafaf;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /* left: 0px; */
+    top: 11px;
+    right:5px;
+    border-radius: 50%;
+    background: rgb(255, 254, 235);
+    border: 1px solid #acafaf;
+  }
+
+
+
+
+  .contador-input{
+    background-color: rgb(250, 241, 255);
+    border: 1px solid #acafaf;
+    position: absolute;
+    text-align: center;
+    color: #acafaf;
+    width: 25px;
+    height: 25px;
+    right: 30px;
+    /* left: 5; */
+    top: 10px; 
+    padding: 3px;
+    padding-top: -2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(100%);
+    transition: all 0.02;
+    user-select: none;
+  }
+
+  .contador-input:hover{
+    background-color: #e3cefd;
+  }
+
+  .contador-input:active{
+    transform: scale(110%);
+  } 
+
+
+  .btnBefore{
+    background-color: rgb(250, 241, 255);
+    border: 1px solid #acafaf;
+    position: absolute;
+    text-align: center;
+    color: #acafaf;
+    width: 25px;
+    height: 25px;
+    right: 30px;
+    /* left: 5; */
+    top: 10px; 
+    padding: 3px;
+    padding-top: -2px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transform: scale(100%); */
+    transition: all 0.02;
+    user-select: none;
+  }
+
+  .btnBefore:hover{
+    background-color: #e3cefd;
+  }
+
+  .btnBefore:active{
+    /* transform: scale(110%); */
+  } 
+
+
+
+/*------------------------------------------------------------------*/
+/********* FIN  cajas texbox  */
+/*---------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*TODO: INICIO:  mensaje formulario */
+/*------------------------------------------------------------------------*/
+/* .mensajeAlertSpan{
+  width: 100%;
+} */
+.mensajeFormulario{
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.error{
+  border: 1px solid rgb(249, 118, 118);
+  color: rgb(255, 49, 49);;
+  background-color: rgba(255, 0, 0, 0.108);
+  font-weight: bold;
+}
+
+.confirm{
+  border: 1px solid rgb(104, 230, 158);
+  color: rgb(7, 115, 45);
+  background-color: rgba(143, 245, 132, 0.108);
+  font-weight: bold;
+}
+
+.error > span, .confirm > span{
+  font-weight:normal;
+  /* font-style: italic; */
+}
+
+
+    /* alert TOAST */
+    .swal2-popup.swal2-toast .error-salo{
+      color:var(--colorThirdt) ;
+    }
+
+    .swal2-popup.swal2-toast .info-salo{
+        color:var(--colorInfo) ;
+    }
+    .swal2-popup.swal2-toast .error-salo >span{
+    /* padding-top: 30px; */
+    color: var(--colorpalet4);
+    font-weight: bold;
+    }
+
+    .swal2-popup.swal2-toast .info-salo >span{
+      color:var(--colorInfo) ;
+      font-weight: bold;
+  }
+
+    body.swal2-toast-shown .swal2-container {
+      width: 90% !important;
+      margin-bottom: 10px;
+  }
+
+    /* FIMN ALERT TOAST */
+
+    .card-footer .notas-form{
+      color: rgb(167, 167, 167);
+      font-family: 'miFuenteLight';
+      /* font-weight:lighter; */
+      font-size: 13px;
+    }
+    .card-footer .notas-form{
+      color: rgb(167, 167, 167);
+      font-family: 'miFuenteLight';
+      /* font-weight:lighter; */
+    }
+    .text-bold{
+         font-weight: bold;
+    }
+
+
+/*------------------------------------------------------------------------*/
+/*____ FINAL:  mensaje formulario */
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*____ TODO:  radio and checkbox buttom */
+/*------------------------------------------------------------------------*/
+
+     
+label.radio-and-checkbox {
+  font-size: 18px !important;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--colorFifth);
+  position: relative;
+  padding: 9px 13px 9px 51px !important;
+  /* font-size: 1em; */
+  border: 1px solid  var(--colorFifth);
+  border-radius: 5px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #fff !important; 
+  user-select:none;
+  
+}
+
+label.radio-and-checkbox:hover {
+    background-color: var(--colorQuarter) !important;
+    border: 1px solid var(--colorpalet5);
+}
+
+input:valid~label.radio-and-checkbox{
+  top: 0px
+}
+label.radio-and-checkbox:before {
+    content: "";
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    border-radius: 50%;
+    background: var(--colorQuarter);
+    border: 1px solid  var(--colorFifth);
+
+}
+label.radio-and-checkbox:hover:before{
+    background-color: #fff;
+}
+
+input[type="radio"].input-radio,
+input[type="checkbox"].input-checkbox {
+  display: none; 
+}
+
+input[type="radio"].input-radio:checked + label.label-radio:before,
+input[type="checkbox"].input-checkbox:checked + label.label-checkbox:before{
+  content: "\2713"; 
+  background-color: #fff;
+
+}
+
+input[type="radio"].input-radio:checked + label.label-radio,
+input[type="checkbox"].input-checkbox:checked + label.label-checkbox{
+    padding: 5px 15px;
+    background:var(--colorQuarter) !important;
+    border: 1px solid var(--colorSecond);
+    border-radius: 5px;
+    color: rgb(56, 30, 114); 
+    font-weight: bold;
+}
+input[type="radio"].input-radio:checked + label.label-radio::before,
+input[type="checkbox"].input-checkbox:checked + label.label-checkbox::before{
+  color:  rgb(56, 30, 114); 
+  border: 2px solid rgb(56, 30, 114); 
+}
+  label.label-checkbox:before {
+    border-radius: 3px; 
+  }
+/*------------------------------------------------------------------------*/
+/*____ FIN:  radio and checkbox buttom */
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*____ TODO::  radio SI NO IGV buttom */
+/*------------------------------------------------------------------------*/
+.switch {
+  position: relative;
+  width: 150px;
+  height: 28px;
+  text-align: center;
+ font-size: 14px;
+  background:var(--colorpalet6);
+  transition: all 0.2s ease;
+  border-radius: 3px;
+}
+.switch span {
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  top: 50%;
+  left: 60%;
+  margin: -3px 0px 0px -7px;
+  background: #fff;
+  display: block;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+  border-radius: 3px;
+}
+.switch span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 12px;
+  margin-top: -8px;
+  background: #fff;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+}
+input[type=radio] {
+  display: none;
+}
+.switch label {
+  cursor: pointer;
+  color: rgba(91, 91, 91, 0.2);
+  width: auto;
+  line-height: 28px;
+  transition: all 0.2s ease;
+}
+label[for=si] {
+  position: absolute;
+  left: 10px;
+  margin-left: -10px;
+  padding-left: 10px;
+  padding-right: 0px;
+  
+}
+label[for=no] {
+  position: absolute;
+  right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#no:checked ~ .switch {
+  background: #bcbcbc;
+}
+#no:checked ~ .switch span {
+  background: #fff;
+  margin-left: -8px;
+}
+#no:checked ~ .switch span:after {
+  background: #fff;
+  height: 20px;
+  margin-top: -8px;
+  margin-left: 8px;
+}
+#si:checked ~ .switch label[for=si] {
+  color: #fff;
+  font-weight: bold;
+}
+#no:checked ~ .switch label[for=no] {
+  color: #fff;
+  font-weight: bold;
+}
+/*------------------------------------------------------------------------*/
+/*____ FIN:  rradio SI NO IGV buttom */
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*____ TODO: IMAGEN E INPUT FILE  */
+/*------------------------------------------------------------------------*/
+
+
+.content-img{
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  user-select: none;
+
+  justify-content:center;
+  transform: translateY();
+  /* border: 1px solid black; */
+  /* width: 300px; */
+  /* position: relative; */
+}
+/* .content-img::after{
+  content: url(/views/src/img/11.png);
+  width: 300px;
+  height: 300px;
+  
+  border: 1px solid black;
+} */
+/* .content-img  i{
+  font-size: 28px;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  right: 0;
+  margin: auto;
+ 
+} */
+
+.content-img:active{
+  background-color:#efe2ff !important;
+  transform: translateY(3px);
+}
+
+
+.grid .item-img{
+  background-color: #fff;
+  border: 1px solid var(--colorFifth);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+
+
+.grid .item-img img{
+  border: 2px solid rgb(251, 218, 255);
+  text-align: center;
+  margin: 1px;
+  height:150px; 
+  width:150px;
+}
+
+
+label.nombre-formato-img{
+  color: rgb(251, 218, 255);
+  position: relative;
+  /* border: 1px solid  rgb(251, 218, 255); */
+  border-top: 0px solid  rgb(251, 218, 255);
+  border-right: 2px solid  rgb(251, 218, 255);
+  border-bottom: 2px solid  rgb(251, 218, 255);
+  border-left: 0px solid  rgb(251, 218, 255);
+  padding: 2px 5px 2px 5px ;
+  margin-left: -6px !important;
+}
+
+
+
+
+label.label-btn-file{
+  background-color: red !important;
+  /* color: #acafaf; */
+  font-size: 16px;
+  position: relative !important;
+  display: flex !important;
+
+  transition: 0.5s ease all;
+  pointer-events:visible;
+  cursor: pointer !important;
+
+  font-size: 18px !important;
+  color:#042F6B;
+  background-color: var(--colorQuarter) !important;
+  border: 1px solid var(--colorpalet5);
+
+  font-style: normal !important;
+  /* position: relative; */
+  padding: 9px 13px 9px 51px !important;
+
+  border-radius: 5px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  user-select: none;
+  display: flex;
+  justify-content:center;
+  transform: translateY();
+  margin-left: 5px;
+}
+
+
+label.label-btn-file i{
+  padding-right: 15px;
+  margin-left: -25px;
+}
+
+label.label-btn-file:hover{
+  background-color:#e7d5ff !important;
+  border: 1px solid #042F6B;;
+  
+}
+
+label.label-btn-file:active{
+   background-color:#efe2ff !important;
+   transform: translateY(3px);
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*____ FIN   IMAGEN E INPUT FILE  */
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+/* TODO:--------------PERSONALIZAFO FORM EMPLEADO------------------ */
+/* ------------------------------------------------------ */
+.grid .grupo, .grid .grupo-check {
+  /* border: 1px solid red; */
+  position: relative;
+  margin: 0px 15px 15px 15px;
+}
+
+.grid .item-img{
+  background-color: #fff;
+  border: 1px solid var(--colorFifth);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+
+
+.grid .item-img img{
+  border: 2px solid rgb(251, 218, 255);
+  text-align: center;
+margin: 1px;
+}
+
+
+label.nombre-formato-img{
+  color: rgb(251, 218, 255);
+  position: relative;
+  /* border: 1px solid  rgb(251, 218, 255); */
+  border-top: 0px solid  rgb(251, 218, 255);
+  border-right: 2px solid  rgb(251, 218, 255);
+  border-bottom: 2px solid  rgb(251, 218, 255);
+  border-left: 0px solid  rgb(251, 218, 255);
+  padding: 2px 5px 2px 5px ;
+  margin-left: -6px;
+}
+
+.grupo-3,.grupo-2{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+ 
+.grupo-3 .grupo,.grupo-2 .grupo{
+  /* width: 100%; */
+  margin-top: 3px;
+}
+
+/* ---------------------------------------------------- */
+/* FIN--------------PERSONALIZAFO FORM EMPLEADO------------------ */
+/* ------------------------------------------------------ */
+
+
+.btnLabel{
+  background-color: red !important; 
+}
+span.btnLabel:hover{
+  background-color: rgb(15, 181, 28) !important; 
+  cursor: pointer;
+}
+select{
+  color: rgb(103, 103, 103);
+}
+
+
+/*------------------------------------------------------------------------*/
+/*TODO: INICIO:  tabla comprobante */
+/*------------------------------------------------------------------------*/
+
+#miDataTableDetalleComprobante tr:hover{
+  background-color: #f3d5f9;
+}
+#miDataTableDetalleComprobante td:nth-child(4){
+  width: 20% !important;
+}
+
+.on-delete td:nth-child(6){
+ width: 30px !important;
+ /* background-color: #590f77; */
+ text-align: center;
+}
+a.btnDeleteComprobante{
+ color: var(--colorDanger);
+ background-color: #f6ada5;
+ border-radius: 3px;
+ padding: 3px 5px;
+ transform: scale(0);
+ transition: .2s; 
+
+}
+
+a.btnDeleteComprobante:hover{
+  color:var(--colorDanger);
+  background-color:   #ed8378;
+}
+
+a.btnDeleteComprobante:active{
+  transform: scale(0.98) !important;
+}
+
+#miDataTableDetalleComprobante input[type=text]{
+ padding: 2px;
+ font-size: 15px;
+ text-align: center;
+ width: 100px;
+ border-radius: 5px;
+ border: 1px solid rgb(184, 150, 203);
+ box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgb(0 0 0 / 20%);
+}
+#miDataTableDetalleComprobante td:nth-child(5) {
+ text-align: right;
+ padding-right: 5px;
+} 
+
+#contenedor_tabla_comprobante .dataTables_info{
+  display: none;
+  }
+/*------------------------------------------------------------------------*/
+/*TODO: INICIO: TABLA TOTALES */
+/*------------------------------------------------------------------------*/
+
+.contenedor_totales{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+
+
+.contenedor_totales .span2{
+  grid-column: 1/3;
+  grid-row: 2;
+}
+.contenedor_totales .span3{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.selectDescuento{
+  width: 100%;
+  padding: 5px;
+}
+.inputDescuento {
+  margin-top: 5px;
+  background: #fff;
+  color: #041647;
+  font-size: 15px;
+  padding: 5px 5px 5px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border: 1px solid var(--colorFifth);
+  border-radius: 5px;
+}
+
+.span2 .grupo input[type="text"] {
+  text-transform: uppercase;
+  font-size: 15px !important;
+  padding: 8px 10px ;
+}
+
+.span2 .grupo{
+ margin: 17px 8px;
+}
+.span2 .grupo label {
+    color: #acafaf;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+    padding: 0px;
+    margin: 0;
+}
+
+
+.span2 .grupo input:focus~label,.span2 input:valid~label{
+    top: -14px;
+    font-size: 14px;
+    color: #042F6B;
+    background-color:var(--colorStandar);
+    padding:0px 10px 0px 10px;
+    margin-left: 2px;
+    }
+
+
+
+
+.span2 .input-requerido::before {
+  content: none;
+}
+
+.grupo-vuelto{
+margin-top: -10px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content:end;
+}
+
+.grupo-vuelto{
+  
+  text-align: right;
+  padding-right: 5px;
+}
+
+
+
+.span3{
+  padding: 10px 5px 0px 10px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.txt-bold{
+  font-weight: bold;
+}
+
+
+.txt-normal{ 
+  font-weight:normal;
+}
+.span3 .contenedor-item-3{
+  display: flex;
+  justify-content:end;
+}
+.span3 .txt-total{
+  text-align: end;
+}
+.txt-color-secundary{
+  color: rgb(141, 141, 141);
+}
+.span3 .total-num{
+  text-align: end;
+  width: 100px;
+}
+
+ .conteneddor-selec-descuento{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .contenedor-item-3 .monto-descuento{
+  display: table;
+ }
+
+ .contenedor-item-3 .monto-descuento div{
+  display: table-cell;
+   vertical-align:bottom;
+ }
+ 
+ .contenedor-item-3.select{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .contenedor-item-3.select .conteneddor-selec-descuento div{
+   display: none;
+ }
+
+ .contenedor-item-3 .monto-descuento{
+   text-align: end;
+   width: 100%;
+ }
+ /*------------------------------------------------------------------------*/
+ /*____ FINAL:  tabla totales */
+ /*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*____ FIN:  tabla Comprobante */
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA SMARTPHONE------------------ */
+/* ------------------------------------------------------ */
+
+@media only screen  and (min-width : 0px)   {  
+    .grupo-col1{
+      display: flex;
+      flex-direction: column;
+    }
+    .grupo-col1 button{
+      margin-bottom: 10px;
+    }
+
+    .grupo.item5{
+      margin-top: 0px;
+    }
+    
+
+
+/*------------------------------------------------------------------------*/
+/*____ TODO: FORMULARIO COMPROBANTE */
+/*------------------------------------------------------------------------*/
+
+
+.pie-comprobante{
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+.contenedor-autocomplete{
+  position: relative;
+}
+.lista-detalle-producto{
+  background-color: #fff;
+  position: absolute;
+  z-index: 100;
+  top: 43px;
+  left: 18px;
+  box-shadow: 0px 4px 8px 3px rgba(0,0,0,0.24);
+  border-radius: 0px 0px 5px 5px;
+
+}
+
+.lista-detalle-producto li{
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding: 5px 10px;
+  display: flex;
+  text-transform: capitalize ;
+}
+
+.lista-detalle-producto li:last-child{
+  border-bottom: none;
+}
+.lista-detalle-producto li:hover{
+ background-color: var(--colorQuarter);
+}
+
+
+.lista-detalle-producto li img{
+  width: 30px;
+  margin-right: 5px;
+  /* border: 1px solid blue; */
+}
+
+.lista-detalle-producto li .detalle-producto{
+  /* border: 2px solid rgb(117, 80, 218) ; */
+  padding-top: 3px;
+  text-transform: capitalize !important;
+  color: #595959;
+} 
+
+
+.lista-detalle-producto li .detalle-producto .precioUnitario{
+  color: blue;
+  font-weight: bold;
+}
+
+.lista-detalle-producto li .detalle-producto .stock{
+  color: rgb(16, 181, 16);
+  font-weight: bold;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*____ FINAL: FIN FOR,ULARIO COMPROBANTE */
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA TABLET------------------ */
+/* ------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+  body.swal2-toast-shown .swal2-container {
+    width: auto !important;
+    margin-bottom: 10px;
+  } 
+  .grupo-col1{
+    display:block;
+    flex-direction: row;
+  }
+  .grupo-col1 button{
+    margin-bottom: 0px;
+  }
+
+
+  .grid .item-img{
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+
+
+  label.nombre-formato-img{
+    border-right: 0px solid  rgb(251, 218, 255);
+    margin-left: 0px !important;
+  }
+
+  .grupo-3,.grupo-2{
+    display: flex;
+    flex-direction: row;
+  }
+   
+  .grupo-3 .grupo,.grupo-2 .grupo{
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 18px;
+  }
+  
+/*------------------------------------------------------------------------*/
+/*TODO: INICIO:  caja totales detalle */
+/*------------------------------------------------------------------------*/
+.span3{
+
+  margin-right: 57px;
+ 
+}
+    .contenedor_totales{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .contenedor_totales .span2{
+      grid-column: 1/2;
+      grid-row: 1;
+    } 
+
+    .contenedor_totales .span3{
+      grid-column: 2/3;
+      grid-row: 1;
+      
+    } 
+
+    .conteneddor-selec-descuento{
+      /* display: flex; */
+      flex-direction: row;
+     }
+
+     .conteneddor-selec-descuento{
+      display: flex;
+      flex-direction: column;
+     }
+    
+     .contenedor-item-3 .monto-descuento div{
+      display: table-cell;
+       vertical-align:bottom;
+     }
+     
+     .contenedor-item-3.select{
+      display: flex;
+      flex-direction: row;
+     }
+    
+     .contenedor-item-3.select .conteneddor-selec-descuento div{
+       display: table;
+       align-items: flex-end;
+       text-align: right;
+     }
+    
+     .contenedor-item-3 .monto-descuento{
+       text-align: end;
+       width: 100px;
+     }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* TODO:-------------------MEDIA PARA DESKTOP------------- */
+/* --------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+
+  .grid{
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+  }
+  
+  .grid .item-img{
+    grid-column:10/13 ;
+    grid-row: 1/ 5;
+  }
+  
+  
+  .grid .item1,
+  .grid .item2,
+  .grid .item3,
+  .grid .item4{
+    grid-column: span 9;
+  }
+
+  label.nombre-formato-img{
+    border-right: 2px solid  rgb(251, 218, 255);
+    margin-left: -6px !important;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

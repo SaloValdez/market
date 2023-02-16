@@ -1,0 +1,181 @@
+
+@import url(root.css);
+
+
+
+button{
+ padding:10px 10px;
+ border-radius: 5px;
+}
+
+button:active{
+  transform: scale(0.98);
+}
+button i{
+  margin: 0px 3px;
+}
+
+ .btnColorNormal{
+  background-color:#EADDFF;
+  border: 1px solid rgb(79, 55, 139);
+
+  color: rgb(79, 55, 139)
+} 
+.btnColorNormal:hover{
+  background-color:#D0BCFF;
+  border: 1px solid rgb(138, 138, 138);
+  cursor:pointer;
+  color:rgb(56, 30, 114);
+  border:1px solid rgb(56, 30, 114)
+}
+
+.btnPrimary{
+  background-color:#66008F;
+  border: 1px solid #180122;
+
+  color: rgb(234, 221, 255);
+}
+.btnPrimary:hover{
+  background-color:#590f77;
+  border: 1px solid #180122;
+  color: rgb(238, 231, 250);
+  cursor: pointer;
+}
+
+
+.btnInfo{
+  background-color:var(--colorInfo);
+  border: 1px solid #159ec8;
+  color: #003d4e;
+}
+.btnSuccess:hover{
+  background-color:#e0ff4f;
+  border: 1px solid #313123;
+  color: #3a3b32;
+  cursor: pointer;
+}
+
+
+.btnSecondary{
+  background-color:rgba(210,201,210);
+  border: 1px solid #180122;
+
+  color: #1d1d1d;
+}
+.btnSecondary:hover{
+  background-color:#9b9b9b;
+  border: 1px solid #313123;
+  color: #111111;
+  cursor: pointer;
+}
+
+.btnDesactivar{
+  opacity:0.5 ;
+  box-shadow: inset()
+}
+
+
+
+.btnDatatatbleDanger{
+  border: 1px solid var(--colorDanger);
+  text-decoration: none;
+  background-color: rgb(254, 197, 197);
+  padding: 2px 10px;
+  border-radius: 5px;
+  color:var(--colorDanger);
+  margin: 0px 3px 0px 3px;
+}
+
+
+.btnEliminar{
+  border: 1px solid var(--colorDanger);
+  text-decoration: none;
+  background-color: rgb(254, 197, 197);
+  padding: 10px 10px;
+  border-radius: 5px;
+  color:var(--colorDanger);
+  margin: 0px 3px 0px 3px;
+}
+
+.btnEliminar:hover{
+  border: 1px solid var(--colorDanger);
+  text-decoration: none;
+  background-color: var(--colorDanger);
+  /* padding: 2px 10px; */
+  border-radius: 5px;
+  color: rgb(249, 210, 210);
+}
+
+
+.btnEliminarSmall{
+  border: 1px solid var(--colorDanger);
+  text-decoration: none;
+  background-color: rgb(254, 197, 197);
+  padding: 10px 10px;
+  border-radius: 5px;
+  color:var(--colorDanger);
+  margin: 0px 3px 0px 3px;
+}
+
+.btnEliminarSmall:hover{
+  border: 1px solid var(--colorDanger);
+  text-decoration: none;
+  background-color: var(--colorDanger);
+  /* padding: 2px 10px; */
+  border-radius: 5px;
+  color: rgb(249, 210, 210);
+}
+
+
+.btnDatatatbleDanger:hover{
+  border: 1px solid var(--colorDanger);
+  text-decoration: none;
+  background-color: var(--colorDanger);
+  padding: 2px 10px;
+  border-radius: 5px;
+  color: rgb(249, 210, 210);
+}
+
+.btnDatatatbleInfo{
+  border: 1px solid var(--colorFirst);
+  text-decoration: none;
+  background-color: rgb(238, 181, 255);
+  padding: 2px 10px;
+  border-radius: 5px;
+  color:var(--colorFirst);
+  margin: 0px 3px 0px 3px;
+}
+
+.btnDatatatbleInfo:hover{
+  background-color:var(--colorFirst);
+  color: rgb(238, 181, 255);
+  border: 1px solid var(--colorFirst);
+
+}
+
+.btnDatatatbleInfoSmall{
+  border: 1px solid var(--colorFirst);
+  text-decoration: none;
+  background-color: rgb(238, 181, 255);
+  padding: 2px 10px;
+  border-radius: 5px;
+  color:var(--colorFirst);
+  margin: 0px 3px 0px 3px;
+}
+
+.btnDatatatbleInfoSmall:hover{
+  background-color:var(--colorFirst);
+  color: rgb(238, 181, 255);
+  border: 1px solid var(--colorFirst);
+
+}
+
+
+
+
+
+
+/* TODO: PARA HOVER */
+@media (hover:hover) {
+
+}

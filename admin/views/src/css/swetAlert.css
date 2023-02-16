@@ -1,0 +1,43 @@
+/* .swal2-container{ */
+    /* filter: blur(2px); */
+/* } */
+.swal2-popup{
+    background-color: var(--colorQuarter) !important;
+}
+
+/* .swal2-success-ring{ */
+    /* background-color: rgba(255, 0, 0d, 0.312) !important; */
+    /* color: blue !important; */
+/* } */
+
+.swal2-icon.swal2-success [class^=swal2-success-line]{
+ background-color: var(--colorFirst2) !important;
+}
+.swal2-icon.swal2-success .swal2-success-ring{
+    border: .25em solid var(--colorFirst2) !important;
+}
+.swal2-styled.swal2-confirm{
+    background-color: var(--colorFirst2) !important;
+    color: var(--colorpalet6) !important;
+}
+.swal2-styled.swal2-confirm:hover{
+    background-color: var(--colorFirst3) !important;
+}
+
+/* color titulo */
+.swal2-title{
+    color: var(--colorFirst) !important;
+}
+/* texto debajo de titulo */
+.swal2-html-container{
+    color: var(--colorSecond) !important;
+}
+
+.swal2-footer{
+    color: var(--colorpalet5) !important;
+}
+
+/* fondo modal oscuro */
+/* .swal2-container.cccc, .swal2-container.swal2-noanimation{
+ /* background-color: rgba(0,0,0,.6) !important; */
+/* }  */

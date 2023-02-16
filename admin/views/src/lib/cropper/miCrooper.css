@@ -1,0 +1,115 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+img{
+    display: block !important;
+} */
+.preview {
+    overflow: hidden;
+    width: 100px; 
+    height:100px;
+    margin: 10px;
+    padding: 0px;
+    border: 1px solid var(--colorFirst2);
+    border-radius: 5px;
+ 
+}
+
+
+  .contenedor-img-cropper{
+  width: 98%;
+  max-width: 1000px;
+  min-width: 320px;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+  
+  .contenedor-img-cropper >img{
+    display: block ;
+    max-width: 100% ;
+  }
+  .card-general.contenedor-cropper{
+    background-color: rebeccapurple;
+    width: 50px;
+  } 
+
+  /*FIN------------------MODAL SMALL */
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ---------------------------------------------------- */
+  /* TODO:-------------------MEDIA PARA SMARTPHONE------------------ */
+  /* ------------------------------------------------------ */
+  
+  @media only screen  and (min-width : 0px)   {  
+    .contenedor-modal-small.crooper{
+     padding-left: 5px !important;
+     /* border: 1px solid red;
+     background-color: red !important; */
+    }
+  
+  }  
+  
+  
+  
+  /* ---------------------------------------------------- */
+  /* TODO:-------------------MEDIA PARA TABLET------------------ */
+  /* ------------------------------------------------------ */
+  @media screen and (min-width: 768px) {
+
+  .preview{
+    margin-top: 0px;
+  }
+  .contenedor-modal.contenedor-modal-small{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rebeccapurple !important;
+  }
+    
+
+  .contenedor-cropper{
+    padding: 5px;
+    display: flex !important;
+    flex-direction: row !important;
+    width: 600px  !important;
+  }
+
+    .contenedor-img-cropper{
+      width: 500px;
+    }
+
+  
+  }
+  
+  
+  /* --------------------------------------------------- */
+  /* TODO:-------------------MEDIA PARA DESKTOP------------- */
+  /* --------------------------------------------------- */
+  @media screen and (min-width: 1024px) {
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
